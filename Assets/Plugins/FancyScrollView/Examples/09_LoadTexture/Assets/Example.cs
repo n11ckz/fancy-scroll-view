@@ -8,7 +8,7 @@ using UnityEngine;
 
 namespace FancyScrollView.Examples.LoadTexture
 {
-    class Example09 : MonoBehaviour
+    class Example : MonoBehaviour
     {
         readonly ItemData[] itemData =
         {

@@ -23,9 +23,14 @@ namespace FancyScrollView.Examples.LoadTexture
 
             static Loader instance;
 
+#if UNITY_6000_0_OR_NEWER
+            public static Loader Instance => instance ??= FindFirstObjectByType<Loader>() ??
+                new GameObject(nameof(TextureLoader)).AddComponent<Loader>();
+#else            
             public static Loader Instance => instance ??
                 (instance = FindObjectOfType<Loader>() ??
-                    new GameObject(typeof(TextureLoader).Name).AddComponent<Loader>());
+                    new GameObject(nameof(TextureLoader)).AddComponent<Loader>());
+#endif            
 
             public void Load(string url, Action<(string Url, Texture Texture)> onSuccess)
             {
@@ -47,8 +52,12 @@ namespace FancyScrollView.Examples.LoadTexture
                 using (var request = UnityWebRequestTexture.GetTexture(url))
                 {
                     yield return request.SendWebRequest();
-
-                    if (request.isNetworkError)
+#if UNITY_6000_0_OR_NEWER
+                    var isNetworkError = request.result == UnityWebRequest.Result.ConnectionError;
+#else
+                    var isNetworkError = request.isNetworkError;
+#endif
+                    if (isNetworkError)
                     {
                         Debug.LogErrorFormat("Error: {0}", request.error);
                         yield break;

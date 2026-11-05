@@ -8,9 +8,9 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace FancyScrollView.Examples.Voronoi
+namespace FancyScrollView.Examples.Metaball
 {
-    class Example05 : MonoBehaviour
+    class Example : MonoBehaviour
     {
         [SerializeField] ScrollView scrollView = default;
         [SerializeField] Button prevCellButton = default;

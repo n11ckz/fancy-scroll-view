@@ -10,7 +10,7 @@ using UnityEngine.UI;
 
 namespace FancyScrollView.Examples.LoopTabBar
 {
-    class Example06 : MonoBehaviour
+    class Example : MonoBehaviour
     {
         [SerializeField] ScrollView scrollView = default;
         [SerializeField] Text selectedItemInfo = default;
