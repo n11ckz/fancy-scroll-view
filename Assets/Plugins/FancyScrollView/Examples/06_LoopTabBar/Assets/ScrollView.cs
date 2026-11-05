@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using EasingCore;
 
-namespace FancyScrollView.Example06
+namespace FancyScrollView.Examples.LoopTabBar
 {
     class ScrollView : FancyScrollView<ItemData, Context>
     {

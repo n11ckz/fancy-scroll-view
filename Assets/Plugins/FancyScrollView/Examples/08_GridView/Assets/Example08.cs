@@ -10,7 +10,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using EasingCore;
 
-namespace FancyScrollView.Example08
+namespace FancyScrollView.Examples.GridView
 {
     class Example08 : MonoBehaviour
     {

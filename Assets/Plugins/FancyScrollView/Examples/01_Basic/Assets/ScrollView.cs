@@ -7,7 +7,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-namespace FancyScrollView.Example01
+namespace FancyScrollView.Examples.Basic
 {
     class ScrollView : FancyScrollView<ItemData>
     {

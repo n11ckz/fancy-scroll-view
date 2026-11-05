@@ -6,7 +6,7 @@
 
 using System;
 
-namespace FancyScrollView.Example07
+namespace FancyScrollView.Examples.ScrollRect
 {
     class Context : FancyScrollRectContext
     {

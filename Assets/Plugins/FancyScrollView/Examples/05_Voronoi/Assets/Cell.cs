@@ -7,7 +7,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace FancyScrollView.Example05
+namespace FancyScrollView.Examples.Voronoi
 {
     [ExecuteInEditMode]
     class Cell : FancyCell<ItemData, Context>

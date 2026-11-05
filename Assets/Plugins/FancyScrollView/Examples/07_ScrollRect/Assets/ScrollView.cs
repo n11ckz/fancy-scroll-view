@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using EasingCore;
 
-namespace FancyScrollView.Example07
+namespace FancyScrollView.Examples.ScrollRect
 {
     class ScrollView : FancyScrollRect<ItemData, Context>
     {

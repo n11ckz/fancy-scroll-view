@@ -8,7 +8,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace FancyScrollView.Example04
+namespace FancyScrollView.Examples.Metaball
 {
     class Example04 : MonoBehaviour
     {

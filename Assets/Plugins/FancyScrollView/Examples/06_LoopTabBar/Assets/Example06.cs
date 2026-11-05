@@ -8,7 +8,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace FancyScrollView.Example06
+namespace FancyScrollView.Examples.LoopTabBar
 {
     class Example06 : MonoBehaviour
     {

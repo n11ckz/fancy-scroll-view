@@ -8,7 +8,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace FancyScrollView.Example05
+namespace FancyScrollView.Examples.Voronoi
 {
     class Example05 : MonoBehaviour
     {

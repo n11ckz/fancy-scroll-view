@@ -7,7 +7,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace FancyScrollView.Example07
+namespace FancyScrollView.Examples.ScrollRect
 {
     class Cell : FancyScrollRectCell<ItemData, Context>
     {

@@ -9,7 +9,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace FancyScrollView.Example04
+namespace FancyScrollView.Examples.Metaball
 {
     class Background : MonoBehaviour, IPointerClickHandler
     {

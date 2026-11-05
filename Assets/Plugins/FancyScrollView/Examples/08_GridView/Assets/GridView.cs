@@ -8,7 +8,7 @@ using System;
 using UnityEngine;
 using EasingCore;
 
-namespace FancyScrollView.Example08
+namespace FancyScrollView.Examples.GridView
 {
     class GridView : FancyGridView<ItemData, Context>
     {

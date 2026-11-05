@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using EasingCore;
 
-namespace FancyScrollView.Example03
+namespace FancyScrollView.Examples.InfiniteScroll
 {
     class ScrollView : FancyScrollView<ItemData, Context>
     {

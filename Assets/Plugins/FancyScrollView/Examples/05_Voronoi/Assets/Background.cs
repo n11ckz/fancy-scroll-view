@@ -9,7 +9,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace FancyScrollView.Example05
+namespace FancyScrollView.Examples.Voronoi
 {
     class Background : MonoBehaviour, IPointerClickHandler
     {

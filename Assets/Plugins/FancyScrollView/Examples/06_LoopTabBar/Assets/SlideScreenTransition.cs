@@ -7,7 +7,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace FancyScrollView.Example06
+namespace FancyScrollView.Examples.LoopTabBar
 {
     class SlideScreenTransition : MonoBehaviour
     {

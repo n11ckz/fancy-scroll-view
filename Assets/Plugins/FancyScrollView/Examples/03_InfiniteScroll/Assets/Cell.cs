@@ -7,7 +7,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace FancyScrollView.Example03
+namespace FancyScrollView.Examples.InfiniteScroll
 {
     class Cell : FancyCell<ItemData, Context>
     {

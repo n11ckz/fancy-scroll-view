@@ -10,7 +10,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using EasingCore;
 
-namespace FancyScrollView.Example07
+namespace FancyScrollView.Examples.ScrollRect
 {
     class Example07 : MonoBehaviour
     {

@@ -7,7 +7,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace FancyScrollView.Example02
+namespace FancyScrollView.Examples.FocusOn
 {
     class Cell : FancyCell<ItemData, Context>
     {

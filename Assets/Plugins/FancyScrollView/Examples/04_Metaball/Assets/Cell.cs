@@ -7,7 +7,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace FancyScrollView.Example04
+namespace FancyScrollView.Examples.Metaball
 {
     [ExecuteInEditMode]
     class Cell : FancyCell<ItemData, Context>

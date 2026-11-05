@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/setchi/FancyScrollView/blob/master/LICENSE)
  */
 
-namespace FancyScrollView.Example08
+namespace FancyScrollView.Examples.GridView
 {
     enum Alignment
     {

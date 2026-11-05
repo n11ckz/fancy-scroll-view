@@ -7,7 +7,7 @@
 using System;
 using UnityEngine;
 
-namespace FancyScrollView.Example05
+namespace FancyScrollView.Examples.Voronoi
 {
     class Context
     {

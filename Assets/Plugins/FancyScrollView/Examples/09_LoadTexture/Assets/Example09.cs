@@ -6,7 +6,7 @@
 
 using UnityEngine;
 
-namespace FancyScrollView.Example09
+namespace FancyScrollView.Examples.LoadTexture
 {
     class Example09 : MonoBehaviour
     {

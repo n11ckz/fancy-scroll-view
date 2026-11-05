@@ -6,7 +6,7 @@
 
 using System;
 
-namespace FancyScrollView.Example02
+namespace FancyScrollView.Examples.FocusOn
 {
     class Context
     {

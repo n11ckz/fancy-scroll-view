@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using EasingCore;
 
-namespace FancyScrollView.Example02
+namespace FancyScrollView.Examples.FocusOn
 {
     class ScrollView : FancyScrollView<ItemData, Context>
     {

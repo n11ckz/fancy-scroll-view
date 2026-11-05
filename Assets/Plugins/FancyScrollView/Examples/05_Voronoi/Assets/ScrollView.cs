@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using EasingCore;
 
-namespace FancyScrollView.Example05
+namespace FancyScrollView.Examples.Voronoi
 {
     class ScrollView : FancyScrollView<ItemData, Context>
     {

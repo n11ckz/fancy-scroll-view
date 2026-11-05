@@ -6,7 +6,7 @@
 
 using System;
 
-namespace FancyScrollView.Example06
+namespace FancyScrollView.Examples.LoopTabBar
 {
     class Context
     {

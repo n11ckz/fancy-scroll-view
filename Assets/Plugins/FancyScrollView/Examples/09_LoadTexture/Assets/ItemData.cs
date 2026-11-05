@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/setchi/FancyScrollView/blob/master/LICENSE)
  */
 
-namespace FancyScrollView.Example09
+namespace FancyScrollView.Examples.LoadTexture
 {
     class ItemData
     {

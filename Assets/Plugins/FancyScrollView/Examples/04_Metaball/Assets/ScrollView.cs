@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using EasingCore;
 
-namespace FancyScrollView.Example04
+namespace FancyScrollView.Examples.Metaball
 {
     class ScrollView : FancyScrollView<ItemData, Context>
     {

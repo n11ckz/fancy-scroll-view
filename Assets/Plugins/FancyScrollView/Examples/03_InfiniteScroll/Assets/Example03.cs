@@ -7,7 +7,7 @@
 using System.Linq;
 using UnityEngine;
 
-namespace FancyScrollView.Example03
+namespace FancyScrollView.Examples.InfiniteScroll
 {
     class Example03 : MonoBehaviour
     {

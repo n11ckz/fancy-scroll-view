@@ -9,7 +9,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using EasingCore;
 
-namespace FancyScrollView.Example09
+namespace FancyScrollView.Examples.LoadTexture
 {
     class Cell : FancyCell<ItemData>
     {

@@ -7,7 +7,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace FancyScrollView.Example08
+namespace FancyScrollView.Examples.GridView
 {
     class Cell : FancyGridViewCell<ItemData, Context>
     {
