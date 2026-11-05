@@ -10,7 +10,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-namespace FancyScrollView
+namespace FancyScrollView.Examples.Shared
 {
     [RequireComponent(typeof(Dropdown))]
     class ScenesDropdown : MonoBehaviour
