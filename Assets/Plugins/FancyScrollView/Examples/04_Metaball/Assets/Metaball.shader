@@ -25,7 +25,7 @@ Shader "FancyScrollViewGallery/Metaball"
     CGINCLUDE
     #include "UnityCG.cginc"
     #include "UnityUI.cginc"
-    #include "../Common/Common.cginc"
+    #include "../../Shared/Common.cginc"
     #include "Metaball.hlsl"
 
     #pragma multi_compile __ UNITY_UI_CLIP_RECT
