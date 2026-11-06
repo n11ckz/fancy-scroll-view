@@ -5,8 +5,8 @@
  */
 
 using System.Collections.Generic;
+using FancyScrollView.Easing;
 using UnityEngine;
-using EasingCore;
 
 namespace FancyScrollView.Examples.InfiniteScroll
 {

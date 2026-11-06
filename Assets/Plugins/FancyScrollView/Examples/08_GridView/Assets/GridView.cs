@@ -5,8 +5,8 @@
  */
 
 using System;
+using FancyScrollView.Easing;
 using UnityEngine;
-using EasingCore;
 
 namespace FancyScrollView.Examples.GridView
 {

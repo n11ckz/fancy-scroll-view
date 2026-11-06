@@ -6,14 +6,15 @@
 
 using UnityEditor;
 using UnityEditor.AnimatedValues;
+using UEditor = UnityEditor.Editor;
 
 // For manteinance, every new [SerializeField] variable in Scroller must be declared here
 
-namespace FancyScrollView
+namespace FancyScrollView.Editor
 {
     [CustomEditor(typeof(Scroller))]
     [CanEditMultipleObjects]
-    public class ScrollerEditor : Editor
+    public class ScrollerEditor : UEditor
     {
         SerializedProperty viewport;
         SerializedProperty scrollDirection;

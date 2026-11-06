@@ -5,10 +5,10 @@
  */
 
 using System;
-using System.Linq;
 using System.Collections.Generic;
+using System.Linq;
+using FancyScrollView.Easing;
 using UnityEngine;
-using EasingCore;
 
 namespace FancyScrollView
 {
