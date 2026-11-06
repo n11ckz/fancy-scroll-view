@@ -56,6 +56,7 @@ namespace FancyScrollView
         }
 
         [SerializeField] float scrollSensitivity = 1f;
+        [SerializeField] float mouseWheelSensitivity = 1f;
 
         /// <summary>
         /// <see cref="ViewportSize"/> の端から端まで Drag したときのスクロール位置の変化量.
@@ -366,7 +367,7 @@ namespace FancyScrollView
                 scrolling = true;
             }
 
-            var position = currentPosition + scrollDelta / ViewportSize * scrollSensitivity;
+            var position = currentPosition + scrollDelta / ViewportSize * scrollSensitivity * mouseWheelSensitivity;
             if (movementType == MovementType.Clamped)
             {
                 position += CalculateOffset(position);
