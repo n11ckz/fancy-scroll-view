@@ -256,7 +256,7 @@ namespace FancyScrollView
         {
             var offset = alignment * (ScrollLength - (1f + reuseCellMarginCount * 2f))
                 + (1f - alignment - 0.5f) * spacing / (CellSize + spacing);
-            return ToScrollerPosition(Mathf.Clamp(position - offset, 0f, MaxScrollPosition));
+            return ToScrollerPosition(Mathf.Clamp(position - offset, -PaddingHeadLength, MaxScrollPosition - PaddingHeadLength));
         }
 
         /// <summary>
