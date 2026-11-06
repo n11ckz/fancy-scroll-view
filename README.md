@@ -16,6 +16,9 @@
 [![.NET 4.x Scripting Runtime](https://img.shields.io/badge/.NET-4.x-blueviolet.svg?style=flat&cacheSeconds=2592000)](https://docs.unity3d.com/2018.3/Documentation/Manual/ScriptingRuntimeUpgrade.html)
 
 ## Installation
+### Manually (using .unitypackage)
+[Releases](https://github.com/n11ckz/fancy-scroll-view/releases) Open the page and download `.unitypackage` file. Drag it to Unity for import. 
+
 ### Unity Asset Store
 [Unity Asset Store](https://assetstore.unity.com/packages/tools/gui/fancyscrollview-96530) から購入して、さらなる開発のサポートを検討してください。
 
