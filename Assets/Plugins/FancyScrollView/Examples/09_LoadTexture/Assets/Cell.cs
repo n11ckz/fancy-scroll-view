@@ -5,15 +5,15 @@
  */
 
 using System.Linq;
+using FancyScrollView.Easing;
 using UnityEngine;
 using UnityEngine.UI;
-using EasingCore;
 
 namespace FancyScrollView.Examples.LoadTexture
 {
     class Cell : FancyCell<ItemData>
     {
-        readonly EasingFunction alphaEasing = Easing.Get(Ease.OutQuint);
+        readonly EasingFunction alphaEasing = EasingHelper.Get(Ease.OutQuint);
 
         [SerializeField] Text title = default;
         [SerializeField] Text description = default;
@@ -78,7 +78,7 @@ namespace FancyScrollView.Examples.LoadTexture
                 ? Quaternion.Euler(0, 0, popAngle * (1f - pop))
                 : Quaternion.Euler(0, 0, slideAngle * slide);
 
-            transform.localPosition = Vector3.left * 500f * slide;
+            transform.localPosition = Vector3.left * (500f * slide);
 
             canvasGroup.alpha = alphaEasing(1f - slide);
 

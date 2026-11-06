@@ -6,9 +6,9 @@
 
 using System;
 using System.Linq;
+using FancyScrollView.Easing;
 using UnityEngine;
 using UnityEngine.UI;
-using EasingCore;
 
 namespace FancyScrollView.Examples.ScrollRect
 {

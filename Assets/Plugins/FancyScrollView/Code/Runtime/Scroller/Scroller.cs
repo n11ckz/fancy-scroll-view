@@ -5,10 +5,10 @@
  */
 
 using System;
+using FancyScrollView.Easing;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using EasingCore;
 
 namespace FancyScrollView
 {
@@ -56,6 +56,7 @@ namespace FancyScrollView
         }
 
         [SerializeField] float scrollSensitivity = 1f;
+        [SerializeField] float mouseWheelSensitivity = 1f;
 
         /// <summary>
         /// <see cref="ViewportSize"/> の端から端まで Drag したときのスクロール位置の変化量.
@@ -168,7 +169,7 @@ namespace FancyScrollView
             public Ease Easing;
         }
 
-        static readonly EasingFunction DefaultEasingFunction = Easing.Get(Ease.OutCubic);
+        static readonly EasingFunction DefaultEasingFunction = EasingHelper.Get(Ease.OutCubic);
 
         class AutoScrollState
         {
@@ -245,7 +246,7 @@ namespace FancyScrollView
         /// <param name="duration">移動にかける秒数.</param>
         /// <param name="easing">移動に使用するイージング.</param>
         /// <param name="onComplete">移動が完了した際に呼び出されるコールバック.</param>
-        public void ScrollTo(float position, float duration, Ease easing, Action onComplete = null) => ScrollTo(position, duration, Easing.Get(easing), onComplete);
+        public void ScrollTo(float position, float duration, Ease easing, Action onComplete = null) => ScrollTo(position, duration, EasingHelper.Get(easing), onComplete);
 
         /// <summary>
         /// 指定した位置まで移動します.
@@ -344,7 +345,7 @@ namespace FancyScrollView
         /// <inheritdoc/>
         void IScrollHandler.OnScroll(PointerEventData eventData)
         {
-            if (!draggable)
+            if (!draggable || dragging)
             {
                 return;
             }
@@ -366,7 +367,7 @@ namespace FancyScrollView
                 scrolling = true;
             }
 
-            var position = currentPosition + scrollDelta / ViewportSize * scrollSensitivity;
+            var position = currentPosition + scrollDelta / ViewportSize * scrollSensitivity * mouseWheelSensitivity;
             if (movementType == MovementType.Clamped)
             {
                 position += CalculateOffset(position);

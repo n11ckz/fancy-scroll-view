@@ -6,7 +6,7 @@
 
 using UnityEngine;
 
-namespace EasingCore
+namespace FancyScrollView.Easing
 {
     public enum Ease
     {
@@ -45,7 +45,7 @@ namespace EasingCore
 
     public delegate float EasingFunction(float t);
 
-    public static class Easing
+    public static class EasingHelper
     {
         /// <summary>
         /// Gets the easing function

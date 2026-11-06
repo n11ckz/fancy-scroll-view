@@ -6,20 +6,22 @@
 
 using UnityEditor;
 using UnityEditor.AnimatedValues;
+using UEditor = UnityEditor.Editor;
 
 // For manteinance, every new [SerializeField] variable in Scroller must be declared here
 
-namespace FancyScrollView
+namespace FancyScrollView.Editor
 {
     [CustomEditor(typeof(Scroller))]
     [CanEditMultipleObjects]
-    public class ScrollerEditor : Editor
+    public class ScrollerEditor : UEditor
     {
         SerializedProperty viewport;
         SerializedProperty scrollDirection;
         SerializedProperty movementType;
         SerializedProperty elasticity;
         SerializedProperty scrollSensitivity;
+        SerializedProperty mouseWheelSensitivity;
         SerializedProperty inertia;
         SerializedProperty decelerationRate;
         SerializedProperty snap;
@@ -36,6 +38,7 @@ namespace FancyScrollView
             movementType = serializedObject.FindProperty("movementType");
             elasticity = serializedObject.FindProperty("elasticity");
             scrollSensitivity = serializedObject.FindProperty("scrollSensitivity");
+            mouseWheelSensitivity = serializedObject.FindProperty("mouseWheelSensitivity");
             inertia = serializedObject.FindProperty("inertia");
             decelerationRate = serializedObject.FindProperty("decelerationRate");
             snap = serializedObject.FindProperty("snap");
@@ -81,6 +84,7 @@ namespace FancyScrollView
             EditorGUILayout.PropertyField(movementType);
             DrawMovementTypeRelatedValue();
             EditorGUILayout.PropertyField(scrollSensitivity);
+            EditorGUILayout.PropertyField(mouseWheelSensitivity);
             EditorGUILayout.PropertyField(inertia);
             DrawInertiaRelatedValues();
             EditorGUILayout.PropertyField(draggable);
