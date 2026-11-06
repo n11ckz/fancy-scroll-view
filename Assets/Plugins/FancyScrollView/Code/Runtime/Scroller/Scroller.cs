@@ -344,7 +344,7 @@ namespace FancyScrollView
         /// <inheritdoc/>
         void IScrollHandler.OnScroll(PointerEventData eventData)
         {
-            if (!draggable)
+            if (!draggable || dragging)
             {
                 return;
             }
